@@ -1,0 +1,23 @@
+.spinneredStone {
+  width: 10em;
+  height: 10em;
+  border-top: 1em solid #d5fff7;
+  border-right: 1em solid transparent;
+  animation: spinnerjing 0.4s linear infinite;
+  border-radius: 50%;
+  margin: 20vh auto;
+}
+.headedStone {
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  margin-left: 8.5em;
+  margin-top: 0.5em;
+  background: #d5fff7;
+}
+
+@keyframes spinnerjing {
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Note <%= @note.id %></h1>
+
+<div>
+  <span id="save-status"></span>
+</div>
+
+<div class="editor" data-collaborative-editor="<%= json_escape(@note.body.as_json.to_json) %>">
+</div>
+
+<%= link_to 'Back', notes_path %>
