@@ -35,9 +35,7 @@
      <td>
        <img src="Images/championship.PNG" />
      </td>
-     <td>
-       <img src="Images/Blogs.PNG" />
-     </td>
+     
    </tr>
 </table>
  </a>
