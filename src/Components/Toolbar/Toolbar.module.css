@@ -1,0 +1,81 @@
+.main {
+  background: rgb(31, 39, 61);
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-left:10px;
+  box-sizing: border-box;
+  overflow:hidden;
+}
+
+.toolWrap {
+  display: flex;
+  flex-direction: row;
+}
+
+.imgGrid {
+  padding: 10px;
+  margin: auto;
+  width:300px;
+  height:70px;
+  box-sizing: border-box;
+  border:4px solid white;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  background-color: black;
+}
+
+.imgGrid:hover {
+  transform: scale(0.8);
+  background-color: darkcyan;
+}
+
+.toolsGrid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0px 100px;
+  width: 100%;
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 1310px) {
+  .main {
+    align-items: center;
+    height: 110px;
+    flex-direction: column;
+    margin: auto;
+  }
+  .imgGrid {
+    width:40%;
+    height: 35%;
+    max-width:300px;
+    min-width: 10px;
+    min-height:57px;
+    margin: 5px;
+  }
+  .toolsGrid {
+    margin: 8px;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .main {
+    height: 150px;
+    padding:0;
+  }
+  .toolWrap {
+    flex-direction: column-reverse;
+    margin-top: 2px;
+  }
+  .toolsGrid {
+    margin: -3px;
+  }
+  .imgGrid{
+    margin-bottom:6px;
+    width:50%
+  }
+}
