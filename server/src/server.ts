@@ -6,7 +6,7 @@ import { SocketEvent, SocketId } from "./types/socket";
 import { USER_CONNECTION_STATUS, User } from "./types/user";
 import { Server } from "socket.io";
 import path from "path";
-
+import { job } from "./cron";
 dotenv.config();
 
 const app = express();
@@ -261,3 +261,4 @@ app.get("/", (req: Request, res: Response) => {
 server.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
 });
+job.start();
