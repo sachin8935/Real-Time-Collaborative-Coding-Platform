@@ -2,9 +2,9 @@ import { CronJob } from "cron";
 import https from "https";
 
 const backendUrl: string =
-  "https://real-time-collaborative-coding-platform-1.onrender.com";
+  "https://real-time-collaborative-coding-platform.onrender.com";
 
-const job: CronJob = new CronJob("*/14 * * * * *", function () {
+const job: CronJob = new CronJob("0 */14 * * * *", function () {
   // This function will be executed every 14 seconds.
   console.log("Restarting server");
 
